@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Employees": [
+    {
+      "FirstName": "parth",
+      "LastName": "bhawsar",
+      "Email": "parth@gmail.com",
+      "MobileNo": "9533942489",
+      "Dob": "2023-06-28T18:30:00.000Z",
+      "Education": "Diploma",
+      "Gender": "Male",
+      "id": 1
+    },
+    {
+      "FirstName": "abc ads",
+      "LastName": "abc wqe",
+      "Email": "abc@.com",
+      "MobileNo": "989876761234",
+      "Dob": "1988-01-01T18:30:00.000Z",
+      "Education": "Diploma",
+      "Gender": "Male",
+      "id": 2
+    },
+    {
+      "FirstName": "parth",
+      "LastName": "bhawar",
+      "Email": "parth@gmail",
+      "MobileNo": "1234567890",
+      "Dob": "2023-07-05T18:30:00.000Z",
+      "Education": "Diploma",
+      "Gender": "Male",
+      "id": 3
+    },
+    {
+      "FirstName": "parth",
+      "LastName": "bhawasar",
+      "Email": "parthbhawsar@gmail",
+      "MobileNo": "3423443432",
+      "Dob": "2023-08-16T18:30:00.000Z",
+      "Education": "Post Graduation",
+      "Gender": "Male",
+      "id": 4
+    },
+    {
+      "FirstName": "Roshni",
+      "LastName": "Samane",
+      "Email": "roshni@gmail.com",
+      "MobileNo": "3423434344",
+      "Dob": "2023-06-28T18:30:00.000Z",
+      "Education": "Matric",
+      "Gender": "Female",
+      "id": 5
+    },
+    {
+      "FirstName": "riya",
+      "LastName": "patel",
+      "Email": "riya@gmail.com",
+      "MobileNo": "3242355534",
+      "Dob": "2023-05-10T18:30:00.000Z",
+      "Education": "Graduation",
+      "Gender": "Female",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<form class="example-form" [formGroup]="EmpForm" (ngSubmit)="onFormSubmit()">
+  <h2 mat-dialog-title>ADD/EDIT EMPLOYEE</h2>
+  <mat-dialog-content>
+    <div class="example-full-width">
+        <mat-form-field class="">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="Ex. Jhon" formControlName="FirstName" required>
+        </mat-form-field>
+        
+        <mat-form-field >
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Ex. Boston" formControlName="LastName" required>
+        </mat-form-field>
+    </div>
+    <div class="example-full-width">
+        <mat-form-field >
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Ex. Jhon@gmail.com" formControlName="Email" required>
+        </mat-form-field>
+        
+        <mat-form-field >
+          <mat-label>Mobile No.</mat-label>
+          <input type="tel" matInput placeholder="Ex. 8665623456" formControlName="MobileNo" required>
+        </mat-form-field>
+    </div>
+    <div class="example-full-width">
+      <mat-form-field>
+        <mat-label>Date Of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="Dob" required>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>Education</mat-label>
+        <mat-select formControlName="Education" required="">
+          <mat-option value="Matric">Matric</mat-option>
+          <mat-option value="Diploma">Diploma</mat-option>
+          <mat-option value="Graduation">Graduation</mat-option>
+          <mat-option value="Post Graduation">Post Graduation</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+    <div class="row">
+      <h4>Gender :</h4>
+      <mat-radio-group aria-label="Select your Gender" formControlName="Gender" required>
+        <mat-radio-button value="Male">Male</mat-radio-button>
+        <mat-radio-button value="Female">Female</mat-radio-button>
+        <mat-radio-button value="Other">Other</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    </mat-dialog-content>
+
+
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Cancel</button>
+      <button mat-button type="submit" cdkFocusInitial>Save</button>
+    </mat-dialog-actions>
+        
+  </form>
